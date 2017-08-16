@@ -33,10 +33,19 @@ div.relative {
 }
 
 .parallax-container {
-    height: 600px !important;
+    height: 700px !important;
 }
 
 #map {
     height: 400px;
     width: 100%;
+}
+
+.styleNavInit {
+    background-color: transparent;
+    box-shadow: initial;
+}
+
+.styleNavTransparent{
+
 }

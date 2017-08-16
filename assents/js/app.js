@@ -18,6 +18,9 @@ function initMap() {
         scrollwheel: false,
         mapTypeControl: false,
         scaleControl: false,
+        streetViewControl: false,
+        zoomControl: false,
+        disableDoubleClickZoom: true,
         styles: [
   {
       "elementType": "geometry",
@@ -219,3 +222,16 @@ function initMap() {
         map: map
     });
 }
+
+$(window).scroll(function () {
+   if($(window).scrollTop() > 100){
+        $("#navbar").removeClass('styleNavInit');
+        $("#navbar").addClass('white');
+
+   }
+   else{
+    $("#navbar").removeClass('white');
+    $("#navbar").addClass('styleNavInit');
+
+   }
+});
