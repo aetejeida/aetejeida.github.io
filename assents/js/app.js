@@ -2,6 +2,21 @@
     $('.parallax').parallax();
 });
 
+function getLocalitation(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(addposition);
+    } else { 
+        
+    }
+}
+
+function addposition(position){
+
+   var c =  document.getElementById("d");
+   c.style.display = "block";
+   c.href = "https://www.google.es/maps/dir/"+position.coords.latitude+","+position.coords.longitude+"/25.542054,-103.441809";
+   c.target ="_blank";
+}
 
 
 function myScroll(value) {

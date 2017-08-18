@@ -46,6 +46,46 @@ div.relative {
     box-shadow: initial;
 }
 
-.styleNavTransparent{
+.styleTitle{
+    color:#343434 !important; 
+    margin-left:30px !important; 
+    cursor:pointer !important;
+}
 
+@media screen and (max-width: 1000px){
+    .styleTitle{
+        color:#343434 !important; 
+        margin-left:0px !important ; 
+        cursor:pointer !important;
+    }        
+
+    .trapecio-frontal {
+        width: 83%;
+        position: absolute;
+        border-right: 150px solid transparent;
+        border-left: 0px solid transparent;
+        border-top: 260px solid #343434;
+        margin-top: 150px;
+    }
+    
+    .trapecio-enmedio {
+        position: absolute;
+        width: 98%;
+        border-right: 150px solid transparent;
+        border-left: 0px solid transparent;
+        border-top: 260px solid #000000;
+        opacity: 0.5;
+        margin-top: 180px;
+    }
+    
+    
+    
+    .trapecio-trasero {
+        position: absolute;
+        width: 95%;
+        border-right: 150px solid transparent;
+        border-left: 0px solid transparent;
+        border-top: 260px solid #EA841D;
+        margin-top: 130px;
+    }
 }
