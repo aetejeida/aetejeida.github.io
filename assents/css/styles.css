@@ -45,14 +45,46 @@ div.relative {
     background-color: transparent;
     box-shadow: initial;
 }
-
+.navbar-fixed { 
+    z-index: 9999 !important;  
+}
 .styleTitle{
     color:#343434 !important; 
     margin-left:30px !important; 
     cursor:pointer !important;
 }
 
+.styleName{
+    top:150px;
+    left:20%;
+    color:white; 
+    position:absolute
+}
+
+.contactDiv{
+    position: absolute; 
+    top: 85px; 
+    left: 15px; 
+    z-index: 99;
+
+}
+
 @media screen and (max-width: 1000px){
+    .styleName{
+        top:150px;
+        left:8%;
+        color:white; 
+        position:absolute;
+        font-size: 38pt;
+    }
+
+    .contactDiv{
+        
+        top: 85px; 
+        left: 40px; 
+       
+    
+    }
     .styleTitle{
         color:#343434 !important; 
         margin-left:0px !important ; 

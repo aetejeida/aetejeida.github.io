@@ -1,5 +1,8 @@
 ﻿$(document).ready(function () {
     $('.parallax').parallax();
+    $(".button-collapse").sideNav({
+        menuWidth: 200
+    });
 });
 
 function getLocalitation(){
@@ -22,6 +25,11 @@ function addposition(position){
 function myScroll(value) {
     $("html, body").animate({ scrollTop: $('#' + value + '').offset().top }, 1000);
 
+}
+
+function myScrollmobile(value) {
+    $("html, body").animate({ scrollTop: $('#' + value + '').offset().top }, 1000);
+    $('.button-collapse').sideNav('hide');
 }
 
 function initMap() {
@@ -242,11 +250,12 @@ $(window).scroll(function () {
    if($(window).scrollTop() > 100){
         $("#navbar").removeClass('styleNavInit');
         $("#navbar").addClass('white');
+        document.getElementById("title").style.display = "block";
 
    }
    else{
     $("#navbar").removeClass('white');
     $("#navbar").addClass('styleNavInit');
-
+    document.getElementById("title").style.display = "none";
    }
 });

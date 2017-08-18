@@ -16,13 +16,21 @@
     <div class="navbar-fixed">
         <nav id="navbar" class="styleNavInit">
             <div class="nav-wrapper">
-                <a onclick="return myScroll('home');" class="brand-logo styleTitle">Codiarq</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a id="title" style="display:none" onclick="return myScroll('home');" class="brand-logo styleTitle">Codiarq</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li onclick="return myScroll('quienSomos');"><a style="color:#2196f3 ">¿Quines Somos?</a></li>
                     <li onclick="return myScroll('nuestraMision');"><a style="color:#2196f3">Nuestra Mision</a></li>
                     <li onclick="return myScroll('nuestraVision');"><a style="color:#2196f3">Nuestra Vision</a></li>
                     <li onclick="return myScroll('antecedentes');"><a style="color:#2196f3">Antecendentes</a></li>
                     <li onclick="return myScroll('contacto');"><a style="color:#2196f3">Contacto</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                        <li onclick="return myScrollmobile('quienSomos');"><a style="color:#2196f3 ">¿Quines Somos?</a></li>
+                        <li onclick="return myScrollmobile('nuestraMision');"><a style="color:#2196f3">Nuestra Mision</a></li>
+                        <li onclick="return myScrollmobile('nuestraVision');"><a style="color:#2196f3">Nuestra Vision</a></li>
+                        <li onclick="return myScrollmobile('antecedentes');"><a style="color:#2196f3">Antecendentes</a></li>
+                        <li onclick="return myScrollmobile('contacto');"><a style="color:#2196f3">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,7 +41,7 @@
                 <div class="trapecio-trasero"></div>
                 <div class="trapecio-enmedio"></div>
                 <div class="trapecio-frontal"></div>
-                <h1 style="top:150px;left:20%;color:white; position:absolute">CODIARQ</h1>
+                <h1 class="styleName">CODIARQ</h1>
             </div>
         </div>
         <div class="parallax-container">
@@ -123,9 +131,6 @@
 
                 <div class="col l4 m12 s12">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/office.jpg">
-                        </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Sigue Construcciones<i class="material-icons right">expand_more</i></span>
                         </div>
@@ -138,9 +143,6 @@
                 </div>
                 <div class="col l4 m12 s12">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/office.jpg">
-                        </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Constructora 21<i class="material-icons right">expand_more</i></span>
 
@@ -154,9 +156,6 @@
                 </div>
                 <div class="col l4 m12 s12">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/office.jpg">
-                        </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Grupo Batta<i class="material-icons right">expand_more</i></span>
 
@@ -176,7 +175,7 @@
         </div>
         <div class="section white" id="contacto" style="padding-bottom:0px; padding-top:0px">
             <div style="position: relative;">
-                <div style="position: absolute; top: 85px; left: 15px; z-index: 99;">
+                <div class="contactDiv">
                     <div class="row">
                         <div class="col s12 m6 l12">
                             <div class="card">
