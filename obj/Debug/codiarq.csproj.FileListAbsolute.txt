@@ -1,6 +1,0 @@
-C:\Users\a.tejeida\Documents\RepoPersonal\Codiarq\codiarq\codiarq\bin\codiarq.dll.config
-C:\Users\a.tejeida\Documents\RepoPersonal\Codiarq\codiarq\codiarq\bin\codiarq.dll
-C:\Users\a.tejeida\Documents\RepoPersonal\Codiarq\codiarq\codiarq\bin\codiarq.pdb
-C:\Users\a.tejeida\Documents\RepoPersonal\Codiarq\codiarq\codiarq\obj\Debug\codiarq.csprojResolveAssemblyReference.cache
-C:\Users\a.tejeida\Documents\RepoPersonal\Codiarq\codiarq\codiarq\obj\Debug\codiarq.dll
-C:\Users\a.tejeida\Documents\RepoPersonal\Codiarq\codiarq\codiarq\obj\Debug\codiarq.pdb
